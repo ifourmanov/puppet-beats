@@ -21,17 +21,17 @@ metricbeat.modules:
     - load
 
     # Per CPU core stats
-    #- core
+    - core
   
     # IO stats
-    #- diskio
+    - diskio
   <%- end -%>
   <%- if @stats_filesystem %>
     # Per filesystem stats
     - filesystem
 
     # File system summary stats
-    #- fsstat
+    - fsstat
   <%-end-%>
   <%- if @stats_proc %>
  
