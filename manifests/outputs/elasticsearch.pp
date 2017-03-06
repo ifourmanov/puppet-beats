@@ -3,7 +3,7 @@
 define beats::outputs::elasticsearch (
   $hosts = ['localhost:9200'],
   $save_topology = true,
-  $index = $title,
+  $index = "$title-%{+yyyy.MM.dd}",
   $username = '',
   $password = '',
   $http_path = '',
