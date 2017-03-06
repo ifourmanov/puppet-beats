@@ -6,7 +6,7 @@ class beats::repo::apt() {
     release  => 'stable',
     repos    => 'main',
     key      => {
-      id     => '0xD27D666CD88E42B4',
+      id     => 'D88E42B4',
       server => 'pgp.mit.edu'
     },
     include  => {
